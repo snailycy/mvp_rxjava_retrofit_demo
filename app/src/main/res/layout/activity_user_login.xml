@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_background"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/rectangle_back"
+            android:drawableLeft="@mipmap/avatar"
+            android:drawablePadding="6dp"
+            android:hint="请输入用户名"
+            android:inputType="text"
+            android:paddingLeft="6dp"
+            android:text="ycy"
+            android:textColor="@color/black"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/rectangle_back"
+            android:drawableLeft="@mipmap/password"
+            android:drawablePadding="6dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="6dp"
+            android:text="ycy"
+            android:textColor="@color/black"
+            android:textColorHint="#888888" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_back"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</FrameLayout>
