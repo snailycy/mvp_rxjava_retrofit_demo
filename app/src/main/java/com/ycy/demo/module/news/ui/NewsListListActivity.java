@@ -9,6 +9,7 @@ import com.ycy.demo.R;
 import com.ycy.demo.base.BaseActivity;
 import com.ycy.demo.base.BaseListAdapter;
 import com.ycy.demo.bean.News;
+import com.ycy.demo.module.news.presenter.INewsListPresenter;
 import com.ycy.demo.module.news.presenter.NewsListPresenter;
 import com.ycy.demo.module.news.view.INewsListView;
 
@@ -20,7 +21,7 @@ import java.util.List;
  */
 public class NewsListListActivity extends BaseActivity implements INewsListView, SwipeRefreshLayout.OnRefreshListener {
 
-    private NewsListPresenter iNewsListPresenter;
+    private INewsListPresenter iNewsListPresenter;
     private SwipeRefreshLayout swipeRefreshLayout;
     private List<News> newsList = new ArrayList<>();
     private NewsListAdapter newsListAdapter;

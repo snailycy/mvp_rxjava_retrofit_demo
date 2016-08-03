@@ -5,4 +5,6 @@ package com.ycy.demo.module.user.presenter;
  */
 public interface ILoginPresenter {
     void doUserLogin(String userName,String password);
+
+    void onDestroy();
 }

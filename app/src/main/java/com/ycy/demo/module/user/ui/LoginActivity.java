@@ -5,6 +5,7 @@ import android.widget.EditText;
 
 import com.ycy.demo.R;
 import com.ycy.demo.base.BaseActivity;
+import com.ycy.demo.module.user.presenter.ILoginPresenter;
 import com.ycy.demo.module.user.presenter.LoginPresenter;
 import com.ycy.demo.module.user.view.ILoginView;
 
@@ -13,7 +14,7 @@ import com.ycy.demo.module.user.view.ILoginView;
  * https://github.com/snailycy/mvp_rxjava_retrofit_demo
  */
 public class LoginActivity extends BaseActivity implements ILoginView, View.OnClickListener {
-    private LoginPresenter iLoginPresenter;
+    private ILoginPresenter iLoginPresenter;
     private EditText etUsername;
     private EditText etPassword;
 

@@ -5,4 +5,6 @@ package com.ycy.demo.module.news.presenter;
  */
 public interface INewsListPresenter {
     void requestNewsList(boolean isRefresh);
+
+    void onDestroy();
 }
